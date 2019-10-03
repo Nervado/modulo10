@@ -2,7 +2,6 @@
 import React, {forwardRef} from 'react';
 import PropTypes from 'prop-types';
 import Icon from 'react-native-vector-icons/MaterialIcons';
-// import {View} from 'react-native';
 
 import {Container, TInput} from './styles';
 
