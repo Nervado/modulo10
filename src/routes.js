@@ -1,7 +1,5 @@
 import {createAppContainer, createSwitchNavigator} from 'react-navigation';
-// import {createBottomTabNavigator} from 'react-navigation-tabs';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-// import {createBottomTabNavigator} from 'react-navigation-tabs';
+import {createMaterialTopTabNavigator} from 'react-navigation-tabs';
 
 import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
@@ -16,7 +14,7 @@ export default (isSigned = false) =>
           SignIn,
           SignUp,
         }),
-        App: createBottomTabNavigator({
+        App: createMaterialTopTabNavigator({
           Dashboard,
         }),
       },
