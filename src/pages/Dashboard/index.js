@@ -1,11 +1,24 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
-import {View, Text} from 'react-native';
-// import { Container } from './styles';
+
+import Icon from 'react-native-vector-icons/MaterialIcons';
+import Background from '~/components/Background';
+
+import {Container, Title} from './styles';
 
 export default function Dashboard() {
   return (
-    <View>
-      <Text>Dashboard</Text>
-    </View>
+    <Background>
+      <Container>
+        <Title>Agendamentos</Title>
+      </Container>
+    </Background>
   );
 }
+
+Dashboard.navigationOptions = {
+  tabBarLabel: 'Agendamentos',
+  tabBarIcon: ({tintColor}) => (
+    <Icon name="event" size={20} color={tintColor} />
+  ),
+};
